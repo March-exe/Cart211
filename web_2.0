@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- PAGE 2 -->
+
+
+    <h2> The Social Web - Web 2.0</h2>
+    <img src="/assessment2/social_media.jpg" alt="web 2.0" width="400" height="300">
+
+    <main>
+
+        <p>
+            Web 2.0 marks the shift to the interactive and participatory Web. It enabled users not only to consume
+            content but
+            also
+            to create, share, and collaborate online.
+
+        </p>
+
+        <p>
+            The Web became a space of collaboration and user-generated content, often referred to as the Social Web.
+
+        </p>
+
+    </main>
+
+    <footer>
+        <h5> Marciano Faugno, Cart 211, fall 2026, assessment</h5>
+    </footer>
+
+</body>
+
+</html>
