@@ -17,6 +17,20 @@ nav.primary {
     margin-bottom: 50px;
 }
 
+nav {
+
+    margin-top: 50px;
+    margin-left: 200px;
+    float: left;
+    width: 15%;
+    line-height: 30px;
+    position: fixed;
+    /*position: fixed  */
+
+
+    margin-bottom: 50px;
+}
+
 
 nav a {
 
@@ -89,6 +103,11 @@ article h3 {
     display: block;
     width: 100%;
     height: auto;
+    object-fit: cover;
+
+    /* height 450px
+    object-fits: cover;
+*/
 
 }
 
