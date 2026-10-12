@@ -135,3 +135,77 @@ footer {
     font-style: italic;
 
 }
+
+@media (max-width: 480px) {
+
+    header img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav.primary {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 10px 0;
+        line-height: 30px;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #000;
+        z-index: 100;
+        color: white;
+        float: none;
+    }
+
+    nav.primary a {
+        color: white;
+    }
+
+    nav {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 100%;
+        padding: 10px 0;
+        line-height: 30px;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #000;
+        z-index: 100;
+        color: white;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    #wrapper {
+        margin-top: 500px;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+        line-height: 150%;
+
+
+    }
+
+    .books {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+    }
+}
+
+/*Books. grid-template-columns: auto auto;
+gap: 16px;
+float: none;
+*/
+
+/*nav.primary grid-template-columns: auto auto;
+gap: 16px;
+float: none;
+*/
