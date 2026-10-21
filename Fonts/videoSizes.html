@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video sizes</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+
+        .size-controls {
+
+            margin-bottom: 15px;
+        }
+
+        .size-controls button {
+
+            padding: 8px 24px;
+            margin: 3px;
+            cursor: pointer;
+
+        }
+
+        video {
+
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            background-color: black;
+            transition: width 0.3s ease;
+        }
+
+        video.small {
+            width: 320px;
+        }
+
+        video.medium {
+            width: 480px;
+
+        }
+
+        video.large {
+            width: 720px;
+
+        }
+
+        video.full {
+            width: 100%
+        }
+    </style>
+</head>
+
+<body>
+    <h1>snow video</h1>
+    <p>watch this video from a selection of our finest sizes</p>
+
+    <div class="size-controls">
+        <strong>video size:</strong>
+
+        <button onclick="changeSize('small')"> small</button>
+
+        <button onclick="changeSize('medium')"> medium</button>
+
+        <button onclick="changeSize('large')"> large</button>
+
+        <button onclick="changeSize('full')"> full</button>
+
+    </div>
+
+    <video id="Video" class="full" controls <source src="exVideo.mp4" type="video/mp4">
+
+        sorry your browser is retarded and cant play a simple video.
+
+    </video>
+
+
+    <script>
+        function changeSize(size) {
+
+            const video = document.getElementById("Video")
+
+            video.classList.remove(
+                "small",
+                "medium",
+                "large",
+                "full"
+            );
+
+            video.classList.add(size);
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
