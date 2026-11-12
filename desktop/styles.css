@@ -1,0 +1,116 @@
+/* =========================
+   CUSTOM FONT
+========================= */
+
+@font-face {
+    font-family: 'DTM';
+    src: url('assets/fonts/MSW98UI-Bold.otf') format('opentype');
+}
+
+
+/* =========================
+   PAGE / DESKTOP BACKGROUND
+========================= */
+
+body {
+    font-family: 'DTM', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #007473;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+#main {}
+
+
+/* =========================
+   LOGIN WINDOW
+========================= */
+
+#login-window {
+    width: 400px;
+    height: 300px;
+
+    color: black;
+    background-color: #acacac;
+
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+
+/* =========================
+   TITLE BAR
+========================= */
+
+.title-bar {
+    position: relative;
+
+    margin: 5px;
+    height: 35px;
+
+    background-color: #00016f;
+    color: white;
+}
+
+
+/* TITLE TEXT */
+
+h3 {
+    margin: 0;
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+
+/* CLOSE BUTTON */
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+/* =========================
+   WINDOW CONTENT
+========================= */
+
+.window-content {
+    padding: 15px;
+}
+
+
+/* =========================
+   GENERAL WINDOW BUTTONS
+========================= */
+
+.win-button {
+    width: 80px;
+    height: 25px;
+
+    background-color: #c0c0c0;
+    border: 2px outset #000000;
+    border-radius: 0;
+
+    font-family: 'DTM', sans-serif;
+    font-size: 12px;
+
+    cursor: pointer;
+}
