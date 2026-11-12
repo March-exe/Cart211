@@ -25,14 +25,15 @@ function setup() {
 }
 
 function checkLogin() {
-    let username = select("#username").value();
-    let password = select("#password").value();
+    var userName = document.getElementById("Username").value;
+    var password = document.getElementById("password").value;
 
-    if (username === correctUsername && password === correctPassword) {
-        loggedIn = true;
-        select("#login-error").html("Login successful!");
+    if (userName == "March" && password == "1234#") {
+        window.location.replace("/desktop/assets/js/script.js");
 
-    } else {
-        select("#login-error").html("Incorrect username or password.");
+    }
+    else {
+        alert("Invalid information");
+        return;
     }
 }

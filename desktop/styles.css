@@ -42,6 +42,38 @@ nav {
    MAIN CONTAINER
 ========================= */
 
+#sticky-note {
+
+    background-color: #e6b402;
+    width: 250px;
+    height: 215px;
+
+    position: absolute;
+    top: 60px;
+    right: 40px;
+
+    border-right: 2px solid #000000;
+    border-bottom: 5px solid #000000;
+}
+
+h4 {
+    position: relative;
+    margin-left: 140px;
+
+    z-index: 2;
+}
+
+.stickyImg {
+
+
+    opacity: 50%;
+    position: absolute;
+    width: 250px;
+
+    z-index: 1;
+
+}
+
 #login-screen {
 
     display: flex;
@@ -70,9 +102,8 @@ nav {
 }
 
 
-/* =========================
-   TITLE BAR
-========================= */
+/*
+   TITLE BAR*/
 
 .title-bar {
     position: relative;
@@ -104,9 +135,8 @@ h3 {
 } */
 
 
-/* =========================
-   WINDOW CONTENT
-========================= */
+/*
+   WINDOW CONTENT*/
 
 .window-content {
     padding: 15px;
@@ -133,6 +163,7 @@ this should be its own unqiue styling but i share this across pages prob login-b
     cursor: pointer;
 }
 
+/* code in html is commented out */
 .close-button {
 
     position: absolute;
@@ -164,6 +195,8 @@ this should be its own unqiue styling but i share this across pages prob login-b
    DESKTOP PAGE
 =========================
 ========================= */
+
+
 /* =========================
    TASK BAR
 ========================= */
@@ -184,6 +217,8 @@ this should be its own unqiue styling but i share this across pages prob login-b
 
 }
 
+
+/* makes image 100px wide and gives a border */
 .startImg {
 
     margin-top: 10px;
@@ -198,7 +233,30 @@ this should be its own unqiue styling but i share this across pages prob login-b
     border-bottom: 2px solid #000000;
 }
 
+/* checks for hover and changes to hand */
 .startImg:hover {
 
     cursor: pointer;
 }
+
+
+/* =========================
+   APPLICATIONS
+========================= */
+#applications {
+
+    display: grid;
+
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.appImgs {}
+
+
+
+
+/* responsive design */
+
+@media (max-width: 1024px) {}
