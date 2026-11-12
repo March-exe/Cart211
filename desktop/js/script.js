@@ -36,7 +36,7 @@ function checkLogin() {
     var password = document.getElementById("password").value;
 
     if (userName == correctUsername && password == correctPassword) {
-        window.location.replace("/desktop/pages/desktop.html");
+        window.location.replace("pages/desktop.html");
 
     }
     else {
