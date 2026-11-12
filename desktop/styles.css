@@ -170,10 +170,10 @@ this should be its own unqiue styling but i share this across pages prob login-b
 }
 
 /* cancel button id for the CANCEL BUTTON ON THE LOGIN SCREEN */
-#cancel-button {}
+/* #cancel-button {} */
 
 /* LOGIN BUTTON TO ENTER SITE ON LOGIN PAGE */
-#login-button {}
+/* #login-button {} */
 
 /* =========================
    Login WINDOW BUTTONS
