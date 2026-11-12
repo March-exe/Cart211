@@ -65,10 +65,14 @@ h4 {
 
 .stickyImg {
 
+    position: absolute;
+    margin-top: -12px;
+    margin-left: -10px;
 
     opacity: 50%;
-    position: absolute;
-    width: 250px;
+
+    width: 105%;
+
 
     z-index: 1;
 
@@ -149,6 +153,8 @@ h3 {
 
 /* 
 this should be its own unqiue styling but i share this across pages prob login-button-styling*/
+
+/* win button contains styling on the buttons without doing anything to their positions */
 .win-button {
     width: 60px;
     height: 25px;
@@ -163,15 +169,11 @@ this should be its own unqiue styling but i share this across pages prob login-b
     cursor: pointer;
 }
 
-/* code in html is commented out */
-.close-button {
+/* cancel button id for the CANCEL BUTTON ON THE LOGIN SCREEN */
+#cancel-button {}
 
-    position: absolute;
-    top: center;
-    right: 10px;
-
-}
-
+/* LOGIN BUTTON TO ENTER SITE ON LOGIN PAGE */
+#login-button {}
 
 /* =========================
    Login WINDOW BUTTONS
