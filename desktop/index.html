@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Desktop</title>
+    <title>Login</title>
 
     <!-- Adds a small icon to the browser tab -->
     <link rel="icon" href="assets/">
@@ -12,63 +12,99 @@
     <meta name="author" content="your name">
     <meta name="copyright" content="your name, student project, 2026">
 
+
+    <!-- css styling sheet script(s) -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Library script(s) -->
 
-    <!-- Loads Google Fonts for use in the CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <!-- p5.min.js is the main p5 library -->
+    <script src="js/libraries/p5.min.js"></script>
+    <!-- p5.sound.min.js allows us to use sound -->
+    <script src="js/libraries/p5.sound.min.js"></script>
 
-    <!-- Loads Font Awesome, a library of ready-made icons -->
-    <!-- The Social media icons and hamburger menu use this library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- My script(s) -->
+    <!-- <script src="js/script.js"></script> -->
+</head>
+
+<!-- Loads Google Fonts for use in the CSS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+<!-- Loads Font Awesome, a library of ready-made icons -->
+<!-- The Social media icons and hamburger menu use this library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <div id="main">
-        <h1></h1>
+
+    <div>
+        <nav>
+
+            <!-- Links to other pages of the website. -->
+            <a href="/desktop/index.html">Login</a>
+
+            <a href="/desktop/pages/desktop.html">Desktop</a>
+
+
+        </nav>
+
     </div>
 
-    <!-- THE LOGIN WINDOW-->
 
-    <div id="login-window">
-
-        <!-- title bar containing the blue bar and text-->
-        <div class="title-bar">
-
-            <h3>System Login</h3>
+    <!-- CONTAINS ALL ELEMENTS USED TO CREATE THE LOGIN WINDOW-->
+    <div id="login-screen">
 
 
 
+        <!-- THE LOGIN WINDOW-->
+
+        <div id="login-window">
+
+            <!-- title bar containing the blue bar and text-->
+            <div class="title-bar">
+
+                <h3>System Login</h3>
+
+
+                <!-- <button class=" win-button">X</button>-->
 
 
 
+
+
+            </div>
+
+            <div class="login-window-buttons">
+
+                <!-- CLOSE BUTTON-->
+                <!-- IDEA TO TURN HACKER MODE IF ITS CLICKED-->
+                <button class="win-button">Cancel</button>
+
+
+                <!-- LOGIN BUTTON-->
+                <button class="win-button">Login</button>
+
+
+
+            </div>
+
+            <div class="window-content">
+                <h1>Welcome!</h1>
+
+                <input id="Username" type="text" placeholder="Username">
+                <input id="password" type="password" placeholder="Password">
+                <p id="login-error"></p>
+
+
+
+            </div>
         </div>
 
-        <div class="login-window-buttons">
-
-
-            <!-- LOGIN BUTTON-->
-            <button class="win-button">Login</button>
-
-            <!-- CLOSE BUTTON-->
-            <!-- IDEA TO TURN HACKER MODE IF ITS CLICKED-->
-            <button class="win-button closeButton">X</button>
-        </div>
-
-        <div class="window-content">
-            <h1>Welcome!</h1>
-
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-
-
-
-        </div>
     </div>
 
 </body>

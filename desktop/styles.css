@@ -22,19 +22,34 @@ body {
 
     background-color: #007473;
 
+
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+
+    color: #acacac;
+
+    position: relative;
+
+
+
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+#login-screen {
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     min-height: 100vh;
 }
-
-
-/* =========================
-   MAIN CONTAINER
-========================= */
-
-#main {}
 
 
 /* =========================
@@ -62,6 +77,7 @@ body {
 .title-bar {
     position: relative;
 
+    /* margin across all sides of the shape */
     margin: 5px;
     height: 35px;
 
@@ -80,12 +96,12 @@ h3 {
 
 
 /* CLOSE BUTTON */
-
+/* 
 .close-button {
-    position: absolute;
+    position: relative;
     top: 5px;
     right: 5px;
-}
+} */
 
 
 /* =========================
@@ -101,8 +117,10 @@ h3 {
    GENERAL WINDOW BUTTONS
 ========================= */
 
+/* 
+this should be its own unqiue styling but i share this across pages prob login-button-styling*/
 .win-button {
-    width: 80px;
+    width: 60px;
     height: 25px;
 
     background-color: #c0c0c0;
@@ -111,6 +129,76 @@ h3 {
 
     font-family: 'DTM', sans-serif;
     font-size: 12px;
+
+    cursor: pointer;
+}
+
+.close-button {
+
+    position: absolute;
+    top: center;
+    right: 10px;
+
+}
+
+
+/* =========================
+   Login WINDOW BUTTONS
+========================= */
+.login-window-buttons {
+    position: relative;
+
+    top: 10px;
+    left: 310px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* 
+=========================
+=========================
+=========================
+   DESKTOP PAGE
+=========================
+========================= */
+/* =========================
+   TASK BAR
+========================= */
+
+#task-bar {
+
+
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    height: 60px;
+    width: 100%;
+
+    color: black;
+    background-color: #acacac;
+
+}
+
+.startImg {
+
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 100px;
+
+    padding: 5px;
+
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.startImg:hover {
 
     cursor: pointer;
 }

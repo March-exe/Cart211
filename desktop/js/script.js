@@ -11,14 +11,28 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
-function setup() {
+let correctUsername = "March";
+let correctPassword = "1234";
 
+let loggedIn = false;
+
+function setup() {
+    noCanvas();
+
+    let loginButton = select("#login-button");
+
+    loginButton.mousePressed(checkLogin);
 }
 
+function checkLogin() {
+    let username = select("#username").value();
+    let password = select("#password").value();
 
-/**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
-function draw() {
+    if (username === correctUsername && password === correctPassword) {
+        loggedIn = true;
+        select("#login-error").html("Login successful!");
 
+    } else {
+        select("#login-error").html("Incorrect username or password.");
+    }
 }
