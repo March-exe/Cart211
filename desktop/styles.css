@@ -143,8 +143,9 @@ h3 {
    WINDOW CONTENT*/
 
 .window-content {
-    padding: 15px;
+    padding: 0px;
 }
+
 
 
 /* =========================
@@ -229,10 +230,10 @@ this should be its own unqiue styling but i share this across pages prob login-b
 
     padding: 5px;
 
-    border-left: 2px solid #ffffff;
-    border-top: 2px solid #ffffff;
-    border-right: 2px solid #000000;
-    border-bottom: 2px solid #000000;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
 }
 
 /* checks for hover and changes to hand */
@@ -251,10 +252,32 @@ this should be its own unqiue styling but i share this across pages prob login-b
 
     flex-direction: column;
     gap: 15px;
+
 }
 
 
-.appImgs {}
+.appImgs {
+    margin-left: 20px;
+
+}
+
+.appImgs:hover {
+    cursor: pointer;
+
+}
+
+/* changes colour to grey, makes the font smaller and makes the text closer to the app icon */
+.appText {
+
+    color: #acacac;
+    font-size: 10px;
+
+
+    margin-top: -2px;
+    margin-bottom: 20px;
+    /* counteracts the margin changes in the html and 'aligns' */
+    padding-left: 20px;
+}
 
 
 
