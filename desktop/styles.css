@@ -144,9 +144,32 @@ h3 {
 
 .window-content {
     padding: 0px;
+
+    gap: 20px;
+
+
+    display: flex;
+    flex-direction: row;
+
 }
 
 
+
+
+.window-inputs {
+
+    padding-top: 20px;
+    margin-left: 25px;
+
+
+    height: 20px;
+    width: 40px;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 5px;
+}
 
 /* =========================
    GENERAL WINDOW BUTTONS
@@ -183,11 +206,12 @@ this should be its own unqiue styling but i share this across pages prob login-b
     position: relative;
 
     top: 10px;
-    left: 310px;
+    margin-right: 10px;
 
     display: flex;
     flex-direction: column;
     gap: 15px;
+
 }
 
 
