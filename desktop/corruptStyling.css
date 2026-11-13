@@ -1,0 +1,61 @@
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* =========================
+   PAGE / DESKTOP BACKGROUND
+========================= */
+html {
+    background: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: monospace;
+    font-weight: 400;
+    font-size: large;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    color: rgb(0, 255, 0);
+
+
+}
+
+#BinaryRain {
+
+    position: fixed;
+    margin-left: 0px;
+    z-index: -1;
+
+
+}
+
+nav {
+
+    z-index: 1;
+}

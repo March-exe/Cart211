@@ -13,6 +13,9 @@
 let correctUsername = "March";
 let correctPassword = "1234#";
 
+let AdminUsername = "Admin";
+let AdminPassword = "1234#";
+
 let loggedIn = false;
 
 function setup() {
@@ -22,6 +25,7 @@ function setup() {
     let loginButton = select("#login-button");
 
     loginButton.mousePressed(checkLogin);
+    loginButton.mousePressed(checkAdmin);
 
     let CancelButton = select("#Cancel-button");
 
@@ -51,4 +55,22 @@ function checkCancel() {
     document.getElementById("Username").value = "";
     document.getElementById("password").value = "";
 
+}
+
+
+function checkAdmin() {
+
+    console.log("Admin login button works!");
+
+    var userName = document.getElementById("Username").value;
+    var password = document.getElementById("password").value;
+
+    if (userName == AdminUsername && password == AdminPassword) {
+        window.location.replace("./pages/corruptOne.html");
+
+    }
+    else {
+        alert("Invalid information");
+        return;
+    }
 }
