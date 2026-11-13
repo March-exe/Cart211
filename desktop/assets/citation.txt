@@ -1,0 +1,7 @@
+things and code i found, used, or re-wrote to make my project
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
+
+https://stackoverflow.com/questions/65007092/redirecting-to-another-html-page-after-successful-login-attempt
+
+https://www.w3schools.com/css/css_howto_inline.asp
