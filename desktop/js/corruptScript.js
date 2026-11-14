@@ -31,7 +31,7 @@ for (let i = 0; i < columns; i++) {
     rainDrops[i] = Math.floor(Math.random() * canvas.height / fontSize);
 }
 
-const draw = () => {
+const drawMatrix = () => {
     context.fillStyle = 'rgba(0, 0, 0, 0.05)';
     context.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -47,5 +47,8 @@ const draw = () => {
         }
         rainDrops[i]++;
     }
+
+
+
 }
-setInterval(draw, 30);
+setInterval(drawMatrix, 30);
