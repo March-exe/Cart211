@@ -25,7 +25,6 @@ function setup() {
     let loginButton = select("#login-button");
 
     loginButton.mousePressed(checkLogin);
-    loginButton.mousePressed(checkAdmin);
 
     let CancelButton = select("#Cancel-button");
 
@@ -34,6 +33,7 @@ function setup() {
 
 function checkLogin() {
 
+    console.log(`Username`);
     console.log("login button works!");
 
     var userName = document.getElementById("Username").value;
@@ -43,10 +43,15 @@ function checkLogin() {
         window.location.replace("./pages/desktop.html");
 
     }
+    else if (userName == AdminUsername && password == AdminPassword) {
+        window.location.replace("./pages/corruptOne.html");
+
+    }
     else {
         alert("Invalid information");
         return;
     }
+
 }
 function checkCancel() {
 
@@ -55,22 +60,4 @@ function checkCancel() {
     document.getElementById("Username").value = "";
     document.getElementById("password").value = "";
 
-}
-
-
-function checkAdmin() {
-
-    console.log("Admin login button works!");
-
-    var userName = document.getElementById("Username").value;
-    var password = document.getElementById("password").value;
-
-    if (userName == AdminUsername && password == AdminPassword) {
-        window.location.replace("./pages/corruptOne.html");
-
-    }
-    else {
-        alert("Invalid information");
-        return;
-    }
 }
