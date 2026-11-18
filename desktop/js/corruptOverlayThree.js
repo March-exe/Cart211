@@ -37,9 +37,9 @@ async function setup() {
     let canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent('geoOverlay');
 
-    clear();
 
-    drawWaveGrid();
+
+    clear();
 
     //shapes();
     //imgs();
@@ -51,12 +51,15 @@ async function setup() {
 
 function draw() {
 
-    moveKey();
+    background(0, 0, 0)
+    // moveKey();
 
-    //tint(0, 255, 0, 100)
-    //image(keyImg, keyInfo.x, keyInfo.y, keyInfo.s, keyInfo.s);
+    // //tint(0, 255, 0, 100)
+    // //image(keyImg, keyInfo.x, keyInfo.y, keyInfo.s, keyInfo.s);
 
-    checkInside();
+    drawWaveGrid();
+
+    // checkInside();
 
 
 }
@@ -245,9 +248,9 @@ function drawWaveGrid() {
 // Distorts the grid coordinates
 function warpPoint(x, y) {
 
-    let newX = x + sin(y * 0.012 + x * 0.020) * 80;
+    let newX = x + sin(y * 0.40 + x * 0.020) * 90 - mouseX;//80
 
-    let newY = y + sin(x * 0.020 - y * 0.003) * 100;
+    let newY = y + sin(x * 0.030 - y * 0.003) * 90;//100
 
     return {
         x: newX,

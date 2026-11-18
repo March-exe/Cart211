@@ -305,7 +305,17 @@ this should be its own unqiue styling but i share this across pages prob login-b
 
 /* clock styling and placement */
 
-/* #clock {} */
+#clock {
+
+    top: 300px;
+
+}
+
+#digiC {
+
+    top: 200px;
+    z-index: 999;
+}
 
 
 /* responsive design */

@@ -23,8 +23,7 @@
     <!-- p5.sound.min.js allows us to use sound -->
     <script src="../js/libraries/p5.sound.min.js"></script>
 
-    <!-- My script(s) -->
-    <script src="../js/desktopScript.js"></script>
+
 </head>
 
 <!-- Loads Google Fonts for use in the CSS -->
@@ -40,7 +39,8 @@
 
 </head>
 
-<body>
+<body onload="startTime()">
+
 
     <!-- NAVIGATION -->
     <div>
@@ -62,15 +62,23 @@
         <div>
             <!--each image has its own left margin to make it look center-->
 
+            <!-- MY COMPUTER-->
+
             <img class="appImgs" src="../assets/images/computer_explorer_cool-0.png" Start button">
             <p class="appText" style="margin-left: -8px;">my computer</p>
+
+            <!-- RECYCLING BIN-->
 
             <img class="appImgs" src="../assets/images/recycle_bin_full_cool-0.png" Start button">
             <p class="appText" style="margin-left: -4px;">recycle bin</p>
 
+            <!-- CALENDAR-->
+
             <img class="appImgs" src="../assets/images/calendar-0.png" Start button">
             <p class="appText" style="margin-left: 3px;">calendar</p>
 
+
+            <!-- MY FOLDER-->
 
             <img class="appImgs" src="../assets/images/directory_open_file_mydocs-5.png" Start button">
             <p class="appText" style="margin-left: 2px;">my folder</p>
@@ -90,7 +98,32 @@
         <!-- SHOULD START HERE AND MAKE CLOCK WORK BEFORE MOViNG ON-->
         <div id="clock"></div>
 
+
     </div>
+    <div id="digiC"></div>
+
+    <script>
+        function startTime() {
+            const today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            let s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('digiC').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(startTime, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+
+
+
+    <!-- <script src="../js/desktopScript.js"></script> -->
+
 </body>
 
 </html>
