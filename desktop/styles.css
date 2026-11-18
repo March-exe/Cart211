@@ -303,19 +303,98 @@ this should be its own unqiue styling but i share this across pages prob login-b
     padding-left: 20px;
 }
 
+
+/* =========================
+   DIGITAL CLOCK AND ITS WINDOW
+========================= */
 /* clock styling and placement */
-
-#clock {
-
-    top: 300px;
-
-}
 
 #digiC {
 
-    top: 200px;
-    z-index: 999;
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+    z-index: 5;
+
+    padding: 3px;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
 }
+
+#digiC:hover {
+
+    cursor: pointer;
+}
+
+#canvas {
+
+    padding: 10px;
+    width: 200px;
+    z-index: 1;
+    position: absolute;
+    bottom: 30px;
+    right: 5px;
+}
+
+#clock-window {
+
+    bottom: 100px;
+    right: 100px;
+    position: absolute;
+
+    width: 400px;
+    height: 300px;
+
+    color: black;
+    background-color: #acacac;
+
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+    display: block;
+}
+
+.clock-title {
+    position: relative;
+
+
+    /* margin across all sides of the shape */
+    margin: 5px;
+    height: 25px;
+
+    background-color: #00016f;
+    color: white;
+}
+
+h5 {
+    margin: 0;
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+#clock-window p {
+
+    font-size: smaller;
+
+    position: absolute;
+    right: 200px;
+    top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* responsive design */

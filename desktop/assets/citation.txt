@@ -7,3 +7,7 @@ https://stackoverflow.com/questions/65007092/redirecting-to-another-html-page-af
 https://www.w3schools.com/css/css_howto_inline.asp
 
 https://medium.com/@javascriptacademy.dev/matrix-raining-code-effect-using-javascript-3da1e4cdf3da
+
+https://www.w3schools.com/graphics/canvas_clock_numbers.asp
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
