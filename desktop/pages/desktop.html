@@ -19,9 +19,9 @@
     <!-- Library script(s) -->
 
     <!-- p5.min.js is the main p5 library -->
-    <script src="../js/libraries/p5.min.js"></script>
+    <!-- <script src="../js/libraries/p5.min.js"></script> -->
     <!-- p5.sound.min.js allows us to use sound -->
-    <script src="../js/libraries/p5.sound.min.js"></script>
+    <!-- <script src="../js/libraries/p5.sound.min.js"></script> -->
 
 
 </head>
@@ -92,17 +92,20 @@
     <!-- TASK BAR -->
     <div id="task-bar">
 
-        <img class="startImg" src="../assets/images/startnew.png"" alt=" Start button">
+        <img class="startImg" src="../assets/images/startnew.png"" alt=" Start button"
+            onclick="showWindow('start-window')">
 
 
         <!-- SHOULD START HERE AND MAKE CLOCK WORK BEFORE MOViNG ON-->
 
 
     </div>
+
+    <!-- DIGITAL CLOCK -->
     <div id="digiC" onclick="showWindow('clock-window')"></div>
 
 
-
+    <!-- W3 schools Clock tutorial (link found in citation.txt)-->
     <script>
         function startTime() {
             const today = new Date();
@@ -121,6 +124,8 @@
         }
 
         let openClock = false
+
+        // Changes a stlying property on the given ID (div variable), chainging its visibility state
         function showWindow(div) {
 
             if (openClock == true) {
@@ -142,13 +147,33 @@
         </div>
 
         <p>Time</p>
+        <!-- FULL CLOCK -->
         <canvas id="canvas" width="400" height="400" style="background-color:#acacac"></canvas>
 
+        <canvas id="Grid" width="160" height="200" style="background-color:#999"></canvas>
 
 
     </div>
+    <script>
 
+        const gridCvs = document.getElementById("Grid");
+        const gridCtx = canvas.getContext("2d");
+        let grid = []
+
+        function createGrid() {
+
+            for (let num = 0; num < 13; num + 10) {
+
+                stroke(0)
+                line(num, num, width, height)
+
+            }
+        }
+
+
+    </script>
     <!-- script for the full sized clock to run on popup -->
+    <!-- W3 schools Clock tutorial (link found in citation.txt)-->
     <script>
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
@@ -230,8 +255,25 @@
             ctx.stroke();
             ctx.rotate(-pos);
         }
+
+
+
+
     </script>
 
+    <div id="start-window">
+        <div class="clock-title">
+            <h5>Start Menu</h5>
+            <h6>Settings</h6>
+            <h6>Display</h6>
+            <h6>Console</h6>
+            <h6>Log-out</h6>
+
+        </div>
+
+
+
+    </div>
 
     <script src="../js/desktopScript.js"></script>
 

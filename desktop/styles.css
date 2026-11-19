@@ -13,6 +13,8 @@
 ========================= */
 
 body {
+    overflow: hidden;
+
     font-family: 'DTM', sans-serif;
     font-weight: 900;
     font-size: 1em;
@@ -158,6 +160,7 @@ h3 {
 
 .window-inputs {
 
+
     padding-top: 20px;
     margin-left: 25px;
 
@@ -191,6 +194,15 @@ this should be its own unqiue styling but i share this across pages prob login-b
     font-size: 12px;
 
     cursor: pointer;
+}
+
+.win-button:hover {
+
+
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
 }
 
 /* cancel button id for the CANCEL BUTTON ON THE LOGIN SCREEN */
@@ -264,7 +276,13 @@ this should be its own unqiue styling but i share this across pages prob login-b
 .startImg:hover {
 
     cursor: pointer;
+
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
 }
+
 
 
 /* =========================
@@ -305,7 +323,7 @@ this should be its own unqiue styling but i share this across pages prob login-b
 
 
 /* =========================
-   DIGITAL CLOCK AND ITS WINDOW
+   DIGITAL CLOCK 
 ========================= */
 /* clock styling and placement */
 
@@ -321,11 +339,17 @@ this should be its own unqiue styling but i share this across pages prob login-b
     border-bottom: 2px solid #ffffff;
     border-left: 2px solid #000000;
     border-top: 2px solid #000000;
+
+
 }
 
 #digiC:hover {
 
     cursor: pointer;
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
 }
 
 #canvas {
@@ -337,6 +361,11 @@ this should be its own unqiue styling but i share this across pages prob login-b
     bottom: 30px;
     right: 5px;
 }
+
+/* =========================
+  ROUND CLOCK WINDOW
+========================= */
+/* clock styling and placement */
 
 #clock-window {
 
@@ -376,6 +405,24 @@ h5 {
     padding-left: 10px;
 }
 
+h6 {
+
+    color: #000000;
+    margin: 5px;
+    padding-top: 15px;
+    padding-left: 10px;
+    text-align: center;
+
+}
+
+h6:hover {
+
+    color: white;
+    background-color: #00016f;
+
+}
+
+
 #clock-window p {
 
     font-size: smaller;
@@ -385,8 +432,35 @@ h5 {
     top: 25px;
 }
 
+/* start window*/
 
+#start-window {
 
+    bottom: 60px;
+    left: 15px;
+    position: absolute;
+
+    width: 300px;
+    height: 200px;
+
+    color: black;
+    background-color: #acacac;
+
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+    display: block;
+}
+
+#Grid {
+
+    position: absolute;
+    top: 65px;
+    left: 5px;
+
+}
 
 
 

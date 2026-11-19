@@ -16,6 +16,8 @@
     <!-- css styling sheet script(s) -->
     <link rel="stylesheet" href="styles.css">
 
+    <script src="js/script.js" defer></script>
+
 
 </head>
 
@@ -33,12 +35,15 @@
 </head>
 
 <body>
+    <audio id="audioFile">
+        <source src="assets/sounds/start-upSound.mp3" type="audio/ogg">
+    </audio>
 
     <div>
         <nav>
 
             <!-- Links to other pages of the website. -->
-            <a href="index.html">Login</a>
+            <a href=" index.html">Login</a>
 
             <a href="pages/desktop.html">Desktop - wip</a>
 
@@ -51,6 +56,7 @@
         </nav>
 
     </div>
+
 
 
     <!-- CONTAINS ALL ELEMENTS USED TO CREATE THE LOGIN WINDOW-->
@@ -78,12 +84,9 @@
 
 
 
+            <!-- WINDOW CENTER CONTENT-->
+
             <div class="window-content">
-
-
-
-
-
                 <h4>Please enter credentials to login.</h4>
 
                 <img style="position: absolute; margin-left: 40px; margin-top: 25px"
@@ -103,6 +106,8 @@
 
 
             </div>
+            <!-- USERNAME AND PASSWORD INPUTS-->
+
             <div class="window-inputs">
                 <!--password and username input sections-->
                 <input id="Username" type="text" placeholder="Username">
@@ -113,9 +118,14 @@
 
     </div>
 
+
+    <!-- STICK NOTE-->
+
     <div id="sticky-note">
 
         <img class="stickyImg" src="assets/images/Untitled-1.png" alt="March ?">
+
+        <!-- TEXT -->
 
         <h4>Usr: March</h4>
         <h4>pass: 1234#</h4>
@@ -133,8 +143,6 @@
     <!-- p5.sound.min.js allows us to use sound -->
     <script src="js/libraries/p5.sound.min.js"></script>
 
-    <!-- My script(s) -->
-    <script src="js/script.js"></script>
 
 </body>
 

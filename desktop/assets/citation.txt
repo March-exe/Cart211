@@ -11,3 +11,5 @@ https://medium.com/@javascriptacademy.dev/matrix-raining-code-effect-using-javas
 https://www.w3schools.com/graphics/canvas_clock_numbers.asp
 
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
+
+https://www.reddit.com/r/neocities/comments/1q7egn4/how_to_make_an_audio_auto_play_upon_opening/
