@@ -14,7 +14,7 @@
 
 
     <!-- css styling sheet script(s) -->
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../assets/styling/styles.css">
 
     <!-- Library script(s) -->
 
@@ -68,10 +68,10 @@
             <p class="appText" style="margin-left: -8px;">my computer</p>
 
             <!-- RECYCLING BIN-->
-
-            <img class="appImgs" src="../assets/images/recycle_bin_full_cool-0.png" Start button">
-            <p class="appText" style="margin-left: -4px;">recycle bin</p>
-
+            <div id="recycle_icon" onclick="showWindow('recycling-window')">
+                <img class="appImgs" src="../assets/images/recycle_bin_full_cool-0.png" Start button">
+                <p class="appText" style="margin-left: -4px;">recycle bin</p>
+            </div>
             <!-- CALENDAR-->
 
             <img class="appImgs" src="../assets/images/calendar-0.png" Start button">
@@ -172,7 +172,7 @@
 
 
     </script>
-    <!-- script for the full sized clock to run on popup -->
+    <!-- ROUND CLOCK -->
     <!-- W3 schools Clock tutorial (link found in citation.txt)-->
     <script>
         const canvas = document.getElementById("canvas");
@@ -257,18 +257,36 @@
         }
 
 
-
-
     </script>
+    <!--    END OF ROUND CLOCK AND ITS WINDOW-->
 
     <div id="start-window">
         <div class="clock-title">
             <h5>Start Menu</h5>
-            <h6>Settings</h6>
-            <h6>Display</h6>
-            <h6>Console</h6>
-            <h6>Log-out</h6>
 
+        </div>
+        <h6>Settings</h6>
+        <h6>Display</h6>
+        <h6>Console</h6>
+
+        <div id="log-out">
+            <h6>Log-out</h6>
+        </div>
+
+
+
+    </div>
+    <!--    RECYCLING BIN-->
+
+    <div id="recycling-window">
+        <div class="recycling-title">
+            <h5>Recycling Bin</h5>
+
+        </div>
+
+        <div id="dump">
+
+            <h6>WIP</h6>
         </div>
 
 

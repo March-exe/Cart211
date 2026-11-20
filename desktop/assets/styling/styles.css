@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'DTM';
-    src: url('assets/fonts/MSW98UI-Bold.otf') format('opentype');
+    src: url('../fonts/MSW98UI-Bold.otf') format('opentype');
 }
 
 
@@ -462,13 +462,96 @@ h6:hover {
 
 }
 
+/* =========================
+RECYCLING BIN
+========================= */
+/* clock styling and placement */
+
+#recycling-window {
+
+    top: 200px;
+    right: 900px;
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    color: black;
+    background-color: #acacac;
+
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+    display: block;
+}
+
+#recycle_icon:hover {
+
+    background-color: #00016f;
+    opacity: 0.5;
+
+
+    width: 75px;
+
+}
+
+.recycling-title {
+    position: relative;
+
+
+    /* margin across all sides of the shape */
+    margin: 5px;
+    height: 25px;
+
+    background-color: #818181;
+    color: white;
+}
+
+#recycling-window p {
+
+    font-size: smaller;
+
+    position: absolute;
+    right: 200px;
+    top: 25px;
+}
+
+/* #log-out{
 
 
 
+} */
+#recycling-window-full {
+
+    top: 0px;
+    left: 400px;
+    position: absolute;
+
+    width: 900px;
+    height: 633px;
+
+    color: black;
+    background-color: #acacac;
+
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+    display: block;
+}
 
 
+#dumpImg {
 
+    margin: 5px;
+    width: 890px;
+    height: 585px;
+}
 
+#recycling_icon {}
 
 
 /* responsive design */

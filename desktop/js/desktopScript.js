@@ -10,18 +10,44 @@
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
+let logoutButton
+let garbageButton
 function setup() {
 
 
-    window.onload = function () {
-        audioToPlay.play()
-    }
+
+
+}
+//lout out in start menu
+logoutButton = document.getElementById("log-out");
+
+logoutButton.addEventListener("click", logout);
+//recycling bin content action
+garbageButton = document.getElementById("dump");
+
+garbageButton.addEventListener("click", garbage);
+
+//recycling bin icon
+garbageIcon = document.getElementById("dump");
+
+garbageIcon.addEventListener("click", garbage);
+
+
+function logout() {
+
+    console.log("LOGOUT works!");
+
+    window.location.href = "../index.html";
 
 }
 
-var audioToPlay = document.getElementById("audioFile");
+function garbage() {
 
+    console.log("GARBAGE works!");
 
+    window.location.href = "./recyclingBin.html";
+
+}
 
 function drawWaveGrid() {
 
