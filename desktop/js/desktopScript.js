@@ -28,7 +28,7 @@ garbageButton = document.getElementById("dump");
 garbageButton.addEventListener("click", garbage);
 
 //recycling bin icon
-garbageIcon = document.getElementById("dump");
+garbageIcon = document.getElementById("dump-desktop-img");
 
 garbageIcon.addEventListener("click", garbage);
 

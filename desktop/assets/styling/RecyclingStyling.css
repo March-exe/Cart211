@@ -1,0 +1,484 @@
+/* =========================
+   CUSTOM FONT
+========================= */
+
+@font-face {
+    font-family: 'DTM';
+    src: url('../fonts/MSW98UI-Bold.otf') format('opentype');
+}
+
+
+/* =========================
+   PAGE / DESKTOP BACKGROUND
+========================= */
+
+body {
+    overflow: hidden;
+
+    font-family: 'DTM', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #007473;
+
+
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+
+    color: #acacac;
+
+    position: relative;
+
+    z-index: 10;
+
+    left: 150px;
+
+}
+
+/* =========================
+   LOGIN WINDOW
+========================= */
+
+#login-window {
+    width: 400px;
+    height: 300px;
+
+    color: black;
+    background-color: #acacac;
+
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+
+/*
+   TITLE BAR*/
+
+.title-bar {
+    position: relative;
+
+    /* margin across all sides of the shape */
+    margin: 5px;
+    height: 35px;
+
+    background-color: #00016f;
+    color: white;
+}
+
+
+/* TITLE TEXT */
+
+h3 {
+    margin: 0;
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+
+/* CLOSE BUTTON */
+/* 
+.close-button {
+    position: relative;
+    top: 5px;
+    right: 5px;
+} */
+
+
+/*
+   WINDOW CONTENT*/
+
+.window-content {
+    padding: 0px;
+
+    gap: 20px;
+
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+
+.window-inputs {
+
+
+    padding-top: 20px;
+    margin-left: 25px;
+
+
+    height: 20px;
+    width: 40px;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 5px;
+}
+
+/* =========================
+   GENERAL WINDOW BUTTONS
+========================= */
+
+/* 
+this should be its own unqiue styling but i share this across pages prob login-button-styling*/
+
+/* win button contains styling on the buttons without doing anything to their positions */
+.win-button {
+    width: 60px;
+    height: 25px;
+
+    background-color: #c0c0c0;
+    border: 2px outset #000000;
+    border-radius: 0;
+
+    font-family: 'DTM', sans-serif;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.win-button:hover {
+
+
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+}
+
+/* cancel button id for the CANCEL BUTTON ON THE LOGIN SCREEN */
+/* #cancel-button {} */
+
+/* LOGIN BUTTON TO ENTER SITE ON LOGIN PAGE */
+/* #login-button {} */
+
+/* =========================
+   Login WINDOW BUTTONS
+========================= */
+.login-window-buttons {
+    position: relative;
+
+    top: 10px;
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+
+/* 
+=========================
+=========================
+=========================
+   DESKTOP PAGE
+=========================
+========================= */
+
+
+/* =========================
+   TASK BAR
+========================= */
+
+#task-bar {
+
+
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    height: 60px;
+    width: 100%;
+
+    color: black;
+    background-color: #acacac;
+
+}
+
+
+/* makes image 100px wide and gives a border */
+.startImg {
+
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 100px;
+
+    padding: 5px;
+
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+}
+
+/* checks for hover and changes to hand */
+.startImg:hover {
+
+    cursor: pointer;
+
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+
+
+/* =========================
+   APPLICATIONS
+========================= */
+#applications {
+
+    display: grid;
+
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+
+.appImgs {
+    margin-left: 20px;
+
+}
+
+.appImgs:hover {
+    cursor: pointer;
+
+}
+
+/* changes colour to grey, makes the font smaller and makes the text closer to the app icon */
+.appText {
+
+    color: #acacac;
+    font-size: 10px;
+
+
+    margin-top: -2px;
+    margin-bottom: 20px;
+    /* counteracts the margin changes in the html and 'aligns' */
+    padding-left: 20px;
+}
+
+
+/* =========================
+   DIGITAL CLOCK 
+========================= */
+/* clock styling and placement */
+
+#digiC {
+
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+    z-index: 5;
+
+    padding: 3px;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+
+
+}
+
+#digiC:hover {
+
+    cursor: pointer;
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+
+
+h5 {
+    margin: 0;
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+h6 {
+
+    color: #000000;
+    margin: 5px;
+    padding-top: 15px;
+    padding-left: 10px;
+    text-align: center;
+
+}
+
+h6:hover {
+
+    color: white;
+    background-color: #00016f;
+
+}
+
+
+/* start window*/
+
+#start-window {
+
+    bottom: 60px;
+    left: 15px;
+    position: absolute;
+
+    width: 300px;
+    height: 200px;
+
+    color: black;
+    background-color: #acacac;
+
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+    display: block;
+    z-index: 11;
+}
+
+/* start window title */
+.clock-title {
+    position: relative;
+
+
+    /* margin across all sides of the shape */
+    margin: 5px;
+    height: 25px;
+
+    background-color: #00016f;
+    color: white;
+}
+
+#Grid {
+
+    position: absolute;
+    top: 65px;
+    left: 5px;
+
+}
+
+/* =========================
+RECYCLING BIN
+========================= */
+/* clock styling and placement */
+
+#recycling-window {
+
+    top: 200px;
+    right: 900px;
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    color: black;
+    background-color: #acacac;
+
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+    display: block;
+}
+
+#recycle_icon:hover {
+
+    background-color: #00016f;
+    opacity: 0.5;
+
+
+    width: 75px;
+
+}
+
+.recycling-title {
+    position: relative;
+
+
+    /* margin across all sides of the shape */
+    margin: 5px;
+    height: 25px;
+
+    background-color: #818181;
+    color: white;
+}
+
+#recycling-window p {
+
+    font-size: smaller;
+
+    position: absolute;
+    right: 200px;
+    top: 25px;
+}
+
+/* #log-out{
+
+
+
+} */
+#recycling-window-full {
+
+    top: 0px;
+    left: 0px;
+    position: absolute;
+
+    width: 100vw;
+    height: 633px;
+
+    color: black;
+    background-color: #acacac;
+
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+    display: block;
+}
+
+
+#dumpImg {
+
+    margin-left: 7px;
+
+    width: 99vw;
+    height: 590px;
+}
+
+#dump-desktop-img {
+
+    margin-left: 5px;
+    width: 290px;
+    height: 260px;
+}
+
+#dump-desktop-img:hover {
+
+    cursor: pointer;
+}
+
+
+
+
+/* responsive design */
+
+@media (max-width: 1024px) {}

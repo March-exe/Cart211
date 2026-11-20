@@ -551,7 +551,19 @@ RECYCLING BIN
     height: 585px;
 }
 
-#recycling_icon {}
+#dump-desktop-img {
+
+    margin-left: 5px;
+    width: 290px;
+    height: 260px;
+}
+
+#dump-desktop-img:hover {
+
+    cursor: pointer;
+}
+
+
 
 
 /* responsive design */
